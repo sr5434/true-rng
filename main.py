@@ -20,8 +20,6 @@ for i in range(qubits-1):
 for i in range(qubits):
     qc.measure(i, i)
  
-from qiskit_ibm_runtime import QiskitRuntimeService, Sampler
- 
 service = QiskitRuntimeService()
 
 # Run on the least-busy backend you have access to
